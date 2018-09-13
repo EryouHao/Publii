@@ -7,7 +7,7 @@ const AstCurrentSiteConfig = {
         icon: ''
     },
     domain: '',
-    language: 'en-us',
+    language: 'en',
     advanced: {
         cssCompression: 1,
         htmlCompression: 1,
@@ -19,8 +19,10 @@ const AstCurrentSiteConfig = {
         sitemapAddAuthors: 1,
         sitemapAddHomepage: 1,
         sitemapExcludedFiles: '',
+        usePageTitleInsteadItemName: false,
         openGraphEnabled: 1,
         openGraphImage: '',
+        openGraphAppId: '',
         twitterCardsEnabled: 1,
         twitterCardsType: 'summary',
         twitterUsername: '',
@@ -46,6 +48,8 @@ const AstCurrentSiteConfig = {
         hiddenPostsListingOrderBy: 'created_at',
         hiddenPostsListingOrder: 'DESC',
         feed: {
+            title: 'displayName',
+            titleValue: '',
             showFullText: 1,
             numberOfPosts: 10,
             showFeaturedImage: 1
@@ -118,6 +122,12 @@ const AstCurrentSiteConfig = {
         },
         github: {
             user: '',
+            repo: '',
+            branch: '',
+            token: ''
+        },
+        gitlab: {
+            server: 'https://gitlab.com/',
             repo: '',
             branch: '',
             token: ''
